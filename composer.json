@@ -1,0 +1,67 @@
+{
+    "name": "ydg/hyperf-plus",
+    "type": "library",
+    "license": "Apache-2.0",
+    "keywords": [
+        "php",
+        "hyperf plus",
+        "hyperf skeleton plus"
+    ],
+    "authors": [
+        {
+            "name": "ydg",
+            "email": "1028180290@qq.com",
+            "role": "Developer"
+        }
+    ],
+    "description": "hyperf skeleton plus",
+    "autoload": {
+        "psr-4": {
+            "HyperfPlus\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+        }
+    },
+    "require": {
+        "php": ">=8.0",
+        "hyperf/async-queue": "^3.0",
+        "hyperf/command": "^3.0",
+        "hyperf/config": "^3.0",
+        "hyperf/database": "^3.0",
+        "hyperf/db-connection": "^3.0",
+        "hyperf/di": "^3.0",
+        "hyperf/framework": "^3.0",
+        "hyperf/http-server": "^3.0",
+        "hyperf/logger": "^3.0",
+        "hyperf/model-cache": "^3.0",
+        "hyperf/redis": "^3.0",
+        "hyperf/support": "^3.0",
+        "hyperf/validation": "^3.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "hyperf/devtool": "^3.0"
+    },
+    "suggest": {
+        "ext-openssl": "Required to use HTTPS.",
+        "ext-json": "Required to use JSON.",
+        "ext-pdo": "Required to use MySQL Client.",
+        "ext-pdo_mysql": "Required to use MySQL Client.",
+        "ext-redis": "Required to use Redis Client.",
+        "ext-xlswriter": "Required to use xlswriter."
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "scripts": {
+        "cs-fix": "php-cs-fixer fix"
+    },
+    "extra": {
+        "hyperf": {
+            "config": "HyperfPlus\\ConfigProvider"
+        }
+    }
+}
